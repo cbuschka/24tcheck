@@ -9,7 +9,7 @@ class HomePage:
         self.ctx.browser.get(self.ctx.baseUrl + "/")
 
     def waitForPresent(self):
-        self.ctx.waitFor(EC.title_contains("Übersetzungsbüro 24translate"))
+        self.ctx.waitFor(EC.title_contains("24translate"))
 
     def waitForOrderTranslationLinkPresent(self):
         self.ctx.waitFor(EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='/uebersetzungsangebot.html']")))
