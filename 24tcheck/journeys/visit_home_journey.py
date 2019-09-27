@@ -1,4 +1,4 @@
-from ..pages.home_page import HomePage
+from ..model.home_page import HomePage
 
 
 class VisitHomeJourney:
