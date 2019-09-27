@@ -1,7 +1,7 @@
 from ..pages.home_page import HomePage
 
 
-class BounceOnHomepageJourney:
+class VisitHomeJourney:
     def __init__(self, ctx):
         self.ctx = ctx
 
