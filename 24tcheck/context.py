@@ -2,10 +2,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class Context:
-    def __init__(self, browser, webdriver, baseUrl):
+    def __init__(self, browser, baseUrl):
         self.baseUrl = baseUrl
         self.browser = browser
-        self.webdriver = webdriver
         self.wait = WebDriverWait(browser, 5)
 
     # https://selenium-python.readthedocs.io/waits.html
@@ -14,3 +13,6 @@ class Context:
 
     def click(self, locator):
         self.browser.find_element(*locator).click()
+
+    def close(self):
+        pass
