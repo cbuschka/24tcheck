@@ -2,7 +2,9 @@
 
 PROJECT_DIR=$(cd `dirname $0` && pwd)
 
-virtualenv --python=python3.7 ${PROJECT_DIR}/.py37/
+if [ ! -d "${PROJECT_DIR}/.py37/" ]; then
+  virtualenv --python=python3.7 ${PROJECT_DIR}/.py37/
+fi
 
 source ${PROJECT_DIR}/.py37/bin/activate
 
